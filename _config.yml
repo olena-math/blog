@@ -19,12 +19,12 @@ plugins:
 - jemoji
 
 # Site settings
-url: 'https://mydomain.com'
+url: 'https://olena-math.netlify.com'
 baseurl: ''
-title: 'My website'
+title: 'Test'
 description: 'This is my new website'
 permalink: pretty
-logo: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=52"
+logo: "/assets/logos/logo@72px.png"
 
 # Pagination
 paginate: 5
@@ -35,6 +35,7 @@ navigation_header:
   Home: /
   About: /about/
   Blog: /blog/
+  Пошук: /search/
 
 # Footer nav
 navigation_footer:
@@ -48,4 +49,18 @@ collections:
     description: "My thoughts and ideas"
     feature_text: |
       Welcome to my blog
-    feature_image: "https://picsum.photos/2560/600?image=866"
+    feature_image: "https://peopledotcom.files.wordpress.com/2019/08/math.jpg"
+
+# 8. Site favicons & manifest icons
+favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
+  16: '/assets/logos/logo@16px.png'
+  24: '/assets/logos/logo@24px.png'
+  32: '/assets/logos/logo@32px.png'
+  48: '/assets/logos/logo@48px.png'
+  57: '/assets/logos/logo@57px.png'
+  64: '/assets/logos/logo@64px.png'
+  72: '/assets/logos/logo@72px.png'
+  114: '/assets/logos/logo@114px.png'
+  120: '/assets/logos/logo@120px.png'
+  144: '/assets/logos/logo@144px.png'
+  152: '/assets/logos/logo@152px.png'
