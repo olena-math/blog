@@ -21,8 +21,8 @@ plugins:
 # Site settings
 url: 'https://olena-math.netlify.com'
 baseurl: ''
-title: 'Test'
-description: 'This is my new website'
+title: 'Олена Запісова - Персональний сайт'
+description: 'Персональний сайт вчителя математики Запісової Олени Михайлівни.'
 permalink: pretty
 logo: "/assets/logos/logo@72px.png"
 
@@ -32,24 +32,25 @@ paginate_path: blog/page:num
 
 # Header nav
 navigation_header:
-  Home: /
-  About: /about/
-  Blog: /blog/
+  Головна: /
+  Про мене: /about/
+  Каталог публікацій: /blog/
+  Категорії публікацій: /categories/
   Пошук: /search/
 
 # Footer nav
 navigation_footer:
-  Back to top: "#top"
+  На Головну: "#top"
 
 # Collections
 collections:
   posts:
-    title: Posts
+    title: Каталог публікацій
     output: true
-    description: "My thoughts and ideas"
+    description: ""
     feature_text: |
-      Welcome to my blog
-    feature_image: "https://peopledotcom.files.wordpress.com/2019/08/math.jpg"
+     
+    feature_image: "/assets/img/math_img2.jpg"
 
 # 8. Site favicons & manifest icons
 favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'

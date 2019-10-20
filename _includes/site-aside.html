@@ -1,0 +1,33 @@
+<aside class="aside  typeset  aside--{{ include.align | default: 'right' }}">
+
+  {% if page.layout == "post" %}
+    <section class="section  section--related-posts">
+      {% include post-related.html %}
+    </section>
+
+  {% elsif page.layout == "page" or page.layout == "home" or page.layout == "blog" %}
+    <section class="section  section--description">
+      <h3>Корисні посилання</h3>
+      <div class="imglinks">
+        <a href="https://mon.gov.ua/ua"><img style="width: 285px" src="/assets/img/monua.png"></a> 
+      </div>
+      <div class="imglinks">
+        <a href="https://dniokh.gov.ua"><img style="width: 285px" src="/assets/img/dniokh.png"></a> 
+      </div>
+      <div class="imglinks">
+        <a href="http://testportal.gov.ua/"><img style="width: 285px" src="/assets/img/ucojao.png"></a> 
+      </div>
+      <div class="imglinks">
+        <a href="https://zno-kharkiv.org.ua/"><img style="width: 285px" src="https://zno-kharkiv.org.ua/wp-content/themes/zno2018/images/logo.png"></a> 
+      </div>
+    </section>
+
+  {% elsif page.layout == "categories" %}
+    <section class="section  section--category-index">
+      <h3>Категорії</h3>
+      {% include nav-categories.html %}
+    </section>
+
+  {% endif %}
+
+</aside>

@@ -1,0 +1,33 @@
+{% if page.categories %}
+  {% capture categories %}
+    {% for category in page.categories %}
+      <span class="label  label--category"><a href="{{ site.baseurl }}/categories/#{{ category | downcase }}">{{ category }}</a></span>{% if forloop.last == false %},{% endif %}
+    {% endfor %}
+  {% endcapture %}
+{% elsif page.category %}
+  {% capture categories %}
+    <span class="label  label--category"><a href="{{ site.baseurl }}/categories/#{{ page.category | downcase }}">{{ page.category }}</a></span>
+  {% endcapture %}
+{% endif %}
+
+<small class="small  post-meta">
+  {% assign date_format = site.date_format | default: "%d %b %Y" %}
+  {{ categories | append: "&nbsp;&middot;&nbsp;" }}<time datetime="{{ page.date | date_to_xmlschema }}" class="time">
+      {% assign m = page.date | date: "%-m" %}
+      {{ page.date | date: "%-d" }}
+      {% case m %}
+      {% when '1' %}Січень
+      {% when '2' %}Лютий
+      {% when '3' %}Березень
+      {% when '4' %}Квітень
+      {% when '5' %}Травень
+      {% when '6' %}Червень
+      {% when '7' %}Липень
+      {% when '8' %}Серпень
+      {% when '9' %}Вересень
+      {% when '10' %}Жовтень
+      {% when '11' %}Листопад
+      {% when '12' %}Грудень
+      {% endcase %}
+      {{ page.date | date: "%Y" }}</time>
+</small>

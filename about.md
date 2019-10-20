@@ -1,6 +1,7 @@
 ---
 layout: page
-title: About this website
+title: Запісова Олена Михайлівна
 ---
 
-I'm not sure yet what this website is about, but I'm sure I'll work it out soon.
+>Керівник районного методичного об'єднання вчителів математики Дворічанського району Харківської області.<br>
+>Вчитель математики вищої кваліфікаційної категорії, вчитель-методист.

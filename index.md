@@ -1,9 +1,10 @@
 ---
-title: Welcome to my website
+title: Персональний сайт вчителя математики - <br>
+ Запісової Олени Михайлівни.
 layout: page
-feature_image: "https://peopledotcom.files.wordpress.com/2019/08/math.jpg"
+feature_image: "/assets/img/math_img1.jpg"
 feature_text: |
-  ## Hello world
+
 aside: true
 ---
 
