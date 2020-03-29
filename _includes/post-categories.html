@@ -4,6 +4,7 @@
     <h2 id="{{ category_name | slugify }}">
       {% case category_name %}
       {% when 'Lessons' %}Розробки уроків
+      {% when 'Methodical-instructions' %}Методичні рекомендації
       {% endcase %}</h2>
     <ul class="list  list--posts">
       {% for page in site.categories[category_name] %}

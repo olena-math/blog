@@ -6,6 +6,7 @@
           {% assign category_format = category %}
           {% case category_format %}
           {% when 'Lessons' %}Розробки уроків
+          {% when 'Methodical-instructions' %}Методичні рекомендації
           {% endcase %} </a>
       </span>{% if forloop.last == false %},{% endif %}
     {% endfor %}

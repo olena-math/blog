@@ -6,7 +6,7 @@
         <a href="#{{ item_format | first | slugify }}">
           {% case item_format %}
           {% when 'Lessons' %}Розробки уроків
-          {% when 'General' %}General
+          {% when 'Methodical-instructions' %}Методичні рекомендації
           {% endcase %}</a>
       </li>
     {% endfor %}
