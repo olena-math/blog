@@ -24,7 +24,7 @@ baseurl: ''
 title: 'Олена Запісова - Персональний сайт'
 description: 'Персональний сайт вчителя математики Запісової Олени Михайлівни.'
 permalink: pretty
-logo: "/assets/logos/logo@72px.png"
+logo: "/assets/logos/logo@64px.png"
 
 # Pagination
 paginate: 5

@@ -1,0 +1,14 @@
+<nav class="nav  nav--categories">
+  <ul class="list  list--categories">
+    {% for item in site.categories %}
+    {% assign item_format = item | first %}
+      <li class="item  item--category">
+        <a href="#{{ item_format | first | slugify }}">
+          {% case item_format %}
+          {% when 'Lessons' %}Розробки уроків
+          {% when 'General' %}General
+          {% endcase %}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
